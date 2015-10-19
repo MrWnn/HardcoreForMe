@@ -1,7 +1,7 @@
 # HardcoreForMe
-Life_is_a_Hardcore
-Here's the knowledge and sKILL that I want to master.
-May the Fortune favors me. 
+#Life_is_a_Hardcore. 
+#Here's the knowledge and sKILL that I want to master.
+#May the Fortune favors me. 
 
 Skill_Future_Board:
 -----------------------------------------------------------------
