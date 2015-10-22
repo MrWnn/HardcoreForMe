@@ -1,7 +1,7 @@
 # HardcoreForMe
 #Life_is_a_Hardcore. 
 #First day that there is light
-============================================================================
+=========================================================================== 
 Thinking about how to grep web info from internet through the curl tool?
 very first step:
 curl [website] > [file]
