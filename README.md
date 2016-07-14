@@ -2,7 +2,7 @@
 #Life_is_a_Hardcore. 
 #Record My thought here (smile
 ==========================================================================
-Thinking about a messure that deal one thing ont time and many dealers in group to make up a new result
+Thinking about a messure that deal one thing ont time 
 create a dealer ,work for ont thing
 
 many different dealers ,wok together to make one big thing up.
