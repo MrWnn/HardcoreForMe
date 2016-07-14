@@ -1,7 +1,8 @@
 set number "set line number"
 set background=dark
 syntax on 
-set t_ti= t_te= #exit vim but remain the text on screen
+set t_ti= t_te=  
+"#exit vim but remain the text on screen"
 
 "=========================================================="
 
