@@ -1,6 +1,18 @@
 # HardcoreForMe
 #Life_is_a_Hardcore. 
-#First day that there is light
+#Record My thought here (smile
+==========================================================================
+Thinking about a messure that deal one thing ont time and many dealers in group to make up a new result
+create a dealer ,work for ont thing
+many different dealers ,wok together to make one big thing up.
+ the symbols:"+ - × ÷ = ! ()"
+1+1=2
+1+1!=1
+1+1×2=3
+(1+3)÷2=2
+one symbol do one thing
+make them together to create a new result.
+day 2 2016-07-14 17:01:58
 =========================================================================== 
 Thinking about how to grep web info from internet through the curl tool?
 
