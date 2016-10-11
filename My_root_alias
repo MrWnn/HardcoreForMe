@@ -1,3 +1,16 @@
+#!/bin/bash
+
+who_am_i=`/usr/bin/whoami`
+
+if [ -e /etc/bashrc ]
+then 
+  path_bashrc=/etc/bashrc
+elif [[ ${who_am_i} == root && -e /root/.bashrc ]]
+then
+  path_bashrc=/root/.bashrc
+fi
+
+echo " 
 alias cp='cp -i'
 alias l.='ls -d .* --color=auto'
 alias ll='ls -l --color=auto'
@@ -6,3 +19,6 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias vi='vim'
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tiled'
+" >> ${path_bashrc}
+
+source ${path_bashrc}
