@@ -1,4 +1,5 @@
 #!/bin/bash
+# MrWnn 2016-10-11 15:58:34
 
 who_am_i=`/usr/bin/whoami`
 
@@ -22,3 +23,4 @@ alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-ti
 " >> ${path_bashrc}
 
 source ${path_bashrc}
+
