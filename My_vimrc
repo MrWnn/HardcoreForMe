@@ -1,4 +1,14 @@
-set number "set line number"
+#!/bin.bash
+
+if [[ $# != 1 ]]
+then 
+  echo -e "\n`basename $0`: [path]/.vimrc\n" 
+  exit
+fi
+
+vimrc_path=$1
+
+echo '
 set background=dark
 syntax on 
 set t_ti= t_te=  
@@ -23,4 +33,4 @@ set noexpandtab
 %retab!
 
 "加!是用于处理非空白字符之后的TAB，即所有的TAB，若不加!，则只处理行首的TAB。"
-"From http://blog.csdn.net/jiang1013nan/article/details/6298727"
+"From http://blog.csdn.net/jiang1013nan/article/details/6298727"' >> ${vimrc_path}
