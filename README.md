@@ -1,6 +1,28 @@
 # HardcoreForMe
 #Life_is_a_Hardcore. 
-#Record My thought here (smile
+#Record My thought here ;)
+==========================================================================
+Package, pack all thing I need to a package
+metho 1
+script {
+download packages
+check packages
+extract packages
+configure && make make install each one 
+}
+
+metho 2
+downloader(){get packages in config file}
+checkmd5sum(){check $#}
+extractor(){extract packages}
+installer(){configure && make make install each one by config file write in rules }
+
+downloader configfile 
+checkmd5sum $#
+extract packages
+installer configfile
+
+
 ==========================================================================
 Thinking about a messure that deal one thing ont time 
 create a dealer ,work for ont thing
