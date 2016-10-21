@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Prototype
 echo $#
 if [ $#  -eq 0 ]
 then
