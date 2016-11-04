@@ -2,7 +2,7 @@
 
 Set_Value()
 {
-    PACAGE_PATH=/${somewhere}/${your_resource_placed}/
+    PACAGE_PATH=/${absolute_path_of}/${your_local_resource_placed}/
     TARGET_IP=${somewhere_you_want_to_sent_to}
     TARGET_MODULE=${rsync_module_on_TARGET_IP}
     RSYNC_USER=${TARGET_IP_rsync_user}
