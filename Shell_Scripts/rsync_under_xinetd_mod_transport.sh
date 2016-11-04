@@ -20,9 +20,9 @@ Check_Condition()
         then 
             echo -e "\n ${PACAGE_PATH} 不存在 \n"
             exit 
-    elif [[ `ls ${PACAGE_PATH} |grep qx|wc -l` == 0 ]]
+    elif [[ `ls ${PACAGE_PATH} |grep ${FILE_NAME_PATTERN}|wc -l` == 0 ]]
         then
-            echo -e "\n ${PACAGE_PATH}下不存在带qx的包，请检查！\n"
+            echo -e "\n ${PACAGE_PATH}下不存在带${FILE_NAME_PATTERN}的包，请检查！\n"
             exit
     elif [[ `ping ${TARGET_IP} -w 1|grep 100\%|wc -l` == 1 ]]
         then
