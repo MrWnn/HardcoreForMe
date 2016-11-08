@@ -13,7 +13,8 @@ GROUP=${The_user_gr0up_you_need_t0_set}
 
 USAGE_SCRIPT()
 {
-	echo -e "\n 用法： user_add_wheel_group.sh [远程免密执行用户名] [新增用户名] [路径/新增用户公钥名] [新增用户密码] [目标IP（可输入多个IP）]
+	echo -e "\n 用法： user_add_wheel_group.sh [远程免密执行用户名] [新增用户名] \
+	 [路径/新增用户公钥名] [新增用户密码] [目标IP（可输入多个IP）]  \
 	\n       (如果被添加用户的公钥与脚本执行路径一致就无需补足该公钥路径) \n"
 	echo -e "例子: ./`basename $0` remote_sudoer_name test /home/MrWnn/.ssh/authorized_keys test_password 192.168.1.1 192.168.1.2\n"
 	exit
