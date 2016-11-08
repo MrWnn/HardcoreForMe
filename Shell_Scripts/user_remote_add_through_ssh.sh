@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# this script works when you setup the target sshd in rsa login mode and you already have a sudoer user on target.
 SUDOER=$1
 USER_ADD=$2
 USER_PUB_FILE=`basename $3 2>/dev/null`
