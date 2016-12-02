@@ -14,7 +14,7 @@ then
   echo "check status empty, plz recheck wget"
   exit
 else
-  wget --spider -t1 ${CHECK_IP}:${CHECK_PORT} || STATUS=0
+  wget --spider -t1 --timeout=1 ${CHECK_IP}:${CHECK_PORT} 2>/dev/null || STATUS=0
 fi
 
 
