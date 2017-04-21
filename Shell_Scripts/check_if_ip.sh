@@ -13,7 +13,7 @@ CHECK_IF_IP()
                 D_part=`echo ${IP}|awk -F. '{print $4}'`
                 for ad_parts in ${A_part} ${D_part} 
                 do 
-                        if [ ${ad_parts} -ge 255 ]||[ ${ad_parts} -le 0 ]|| [ `echo ${ad_parts} |grep "^0.*" |wc -l` -eq 1  ] 
+                        if [ ${ad_parts} -ge 255 ]||[ ${ad_parts} -le 0 ]|| [ `echo ${ad_parts} |grep "^0.\{1,3\}" |wc -l` -eq 1  ] 
                         then 
                                 echo -e "\n Invalid IP ${IP} input"
                                 exit
@@ -21,7 +21,7 @@ CHECK_IF_IP()
                 done
                 for bc_parts in ${B_part} ${C_part}
                 do
-                        if [ ${bc_parts} -ge 255 ]||[ ${bc_parts} -lt 0 ]|| [ `echo ${bc_parts} |grep "^0.*" |wc -l` -eq 1  ] 
+                        if [ ${bc_parts} -ge 255 ]||[ ${bc_parts} -lt 0 ]|| [ `echo ${bc_parts} |grep "^0.\{1,3\}" |wc -l` -eq 1  ] 
                         then 
                                 echo -e "\n Invalid IP ${IP} input"
                                 exit
