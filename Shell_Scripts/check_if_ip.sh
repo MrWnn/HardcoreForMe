@@ -18,6 +18,7 @@ CHECK_IF_IP()
                                 echo -e "\n Invalid IP ${IP} input"
                                 exit
                         fi
+                done
         fi
 }
 CHECK_IF_IP $1
