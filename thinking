@@ -1,3 +1,17 @@
+######2017-07-09 20:48:26
+very first i met 'bash file.sh'
+and then 'php file.php'
+and 'python file.py'
+later i met 'java file'
+finally these above remind me of ./cpp.exe.
+so I figure out some rules we speak to pc ;)
+man => file => explainer => binary => machine
+ a: 1 man => file => explainer => binary => machine
+ b: 1 man => file 
+    2 file => explainer => binary.file
+    3 man = > binary.file => machine
+
+####
 Package, pack all thing I need to a package
 
 metho 1
