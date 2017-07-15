@@ -35,3 +35,23 @@ for i in range(0,len(cmd_list)):
 # triple subjects operator
 b=1;c=2
 print b>c and b or c 
+
+#list cuter and the list copy 
+print sort_list[0:]
+print sort_list[:4]
+
+pointer_list = sort_list
+print pointer_list
+sort_list.append(7)
+pointer_list.append(8)
+print sort_list
+print pointer_list
+print "this is the pointer , not the copy"
+
+copy_list = sort_list[:]
+print copy_list
+sort_list.append(9)
+copy_list.append(10)
+print sort_list
+print copy_list
+print "this is the copy list"
