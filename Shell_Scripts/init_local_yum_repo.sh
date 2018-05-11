@@ -42,18 +42,18 @@ enabled=1
 gpgcheck=0
 " |tee -a  /etc/yum.repos.d/${repo}.repo
 echo "127.0.0.1 ${domain_name}" >> /etc/hosts
-yum clean all
-yum makecache
+
 
 #写入本地源nginx配置
 
 if [ ! -e /usr/local/nginx/conf/vhost/${domain_name}.conf ];then
     /bin/cp -vf /usr/local/nginx/conf/vhost/example.conf /usr/local/nginx/conf/vhost/${domain_name}.conf
     sed -i "s#example-domain#${domain_name}#g" /usr/local/nginx/conf/vhost/${domain_name}.conf
-    sed -i "s#example-dir#\/var\/www\/html\/phpmyadmin\/#g" /usr/local/nginx/conf/vhost/${domain_name}.conf
-    sed -i "s#root.*#root  \/var\/www\/html\/localyum\/#g" /usr/local/nginx/conf/vhost/${domain_name}.conf
+    sed -i "s#example-dir#\/var\/www\/html\/localyum\/#g" /usr/local/nginx/conf/vhost/${domain_name}.conf
     /etc/init.d/nginx reload
 fi
 
+yum clean all
+yum makecache
 
 echo "已完成本地源${repo}" && exit 0
