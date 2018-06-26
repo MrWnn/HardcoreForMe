@@ -34,12 +34,12 @@ def get_physical_server_list():
     cursor_get_group_id=("select * from abc_admin.game_plat_group;")
     cursor.execute(cursor_get_group_id)
     data = cursor.fetchall()
-    for i in data:
-        cursor_get_physical_server_list=("select server_ip from abc_admin.physical_server_list where allow_add = 1 and group_id=%s" %(i[0]))
-        cursor.execute(cursor_get_physical_server_list)
-        data1 = cursor.fetchall()
-        db.close()
-        return data1
+    cursor_get_physical_server_list=("select server_ip from ssqy_admin.physical_server_list where allow_add = 1 and group_id=%s" %(data[0][0]))
+    cursor.execute(cursor_get_physical_server_list)
+    data1 = cursor.fetchall()
+    print "Data1: ",type(data1)
+    db.close()
+    return data1
     db.close()
  
 # get the salt minions list from local salt-key list
