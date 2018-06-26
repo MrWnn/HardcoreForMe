@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# shell version logic
+# shell version logic to get physical server list
 ##id=`echo "use abc_admin;select * from game_plat_group "|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;echo $id
 #for ids in `echo "use abc_admin;select * from game_plat_group "|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;do
 #    id=`echo $ids|awk -F- '{print $1}'`
