@@ -38,6 +38,7 @@ def get_physical_server_list():
         cursor_get_physical_server_list=("select server_ip from abc_admin.physical_server_list where allow_add = 1 and group_id=%s" %(i[0]))
         cursor.execute(cursor_get_physical_server_list)
         data1 = cursor.fetchall()
+        db.close()
         return data1
     db.close()
  
