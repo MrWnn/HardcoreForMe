@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 # shell version logic
-##id=`echo "use abc_admin;select * from game_plat_group "|mysql -P4580 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;echo $id
-#for ids in `echo "use abc_admin;select * from game_plat_group "|mysql -P4580 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;do
+##id=`echo "use abc_admin;select * from game_plat_group "|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;echo $id
+#for ids in `echo "use abc_admin;select * from game_plat_group "|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep ^[0-9]|sed "s/\t/-/"`;do
 #    id=`echo $ids|awk -F- '{print $1}'`
 #    name=`echo $ids|awk -F- '{print $2}'`
 #    echo
 #    echo $id $name
-#    echo "use abc_admin;select server_ip from physical_server_list where allow_add = 1 and group_id='${id}';"|mysql -P4580 -h127.0.0.1 -uroot -p${password} |grep [0-9]|sort |uniq
-#    echo -e "共  \c";echo "use abc_admin;select server_ip from physical_server_list where allow_add = 1 and group_id='${id}';"|mysql -P4580 -h127.0.0.1 -uroot -p${password} |grep [0-9]|sort |uniq|wc -l
+#    echo "use abc_admin;select server_ip from physical_server_list where allow_add = 1 and group_id='${id}';"|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep [0-9]|sort |uniq
+#    echo -e "共  \c";echo "use abc_admin;select server_ip from physical_server_list where allow_add = 1 and group_id='${id}';"|mysql -P3360 -h127.0.0.1 -uroot -p${password} |grep [0-9]|sort |uniq|wc -l
 #done
 
 import MySQLdb
