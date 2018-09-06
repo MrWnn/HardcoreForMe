@@ -1,4 +1,5 @@
 #!/bin/bash
+#此脚本需要配合nginx来制作本地源服务器
 
 work_dir=$(cd `dirname $0`;pwd)
 name=`echo $1 |awk -F. '{print $1}'`
