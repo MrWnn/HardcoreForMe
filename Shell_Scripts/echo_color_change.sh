@@ -14,5 +14,5 @@ Red() {
 
 Green $0
 Green "${Text}"
-Res $0
+Red $0
 Red  "${Text}"
