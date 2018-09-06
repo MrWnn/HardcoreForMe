@@ -3,13 +3,13 @@
 Text="$1"
 
 # 标绿
-Green() {
-    echo "|font color="green"||b|$@|^b| ||font|"
+Green(){
+    echo -e "\n\033[1;32m$*\033[0m\n"
 }
 
 # 标红
 Red() {
-    echo "|font color="red"||b|$@|^b| ||font|"
+    echo -e "\n\033[1;32m$*\033[0m\n"
 }
 
 Green $0
